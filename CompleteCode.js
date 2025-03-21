@@ -72,7 +72,7 @@ function contactDetails(firstName,lastName,address,state,city,zipCode,email,phon
 }
 
 //UC3 
-contactDetails('Kushagra', 'Sharma', 'Home', 'Uttar Pradesh', 'Agra', "282005", 'kushagra@gmail.com', "3342532525");
+contactDetails('Sneha', 'Varshney', 'Home', 'Uttar Pradesh', 'Mathura', "281001", 'Sneha@gmail.com', "36569686565");
 console.log(addressBook);
 
 
@@ -132,3 +132,11 @@ function deleteContact(first_Name){
     }
 }
 
+//UC 6
+
+//creating a function to calculate number of contacts in addressbook using reduce() method
+function numberOfContacts(){
+    return addressBook.reduce((total)=>total+1, 0);
+}
+
+console.log("Total number of contacts inside address book is : "+numberOfContacts());
